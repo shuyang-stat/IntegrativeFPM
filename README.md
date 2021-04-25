@@ -8,6 +8,7 @@ This R package/function is intended to provide a template for implementing the n
 
 To proficient R programmers are interested in advancing this R package, please contact me and I am happy to work together. 
 
+### goal and descripton 
 The goal of *IntegrativeFPM* is to implement integrative analyses for
 the finite population mean (FPM) parameters combining a non-probability
 sample with a probability sample which provides high-dimensional
@@ -37,13 +38,6 @@ finite population inference.
     either the sampling probability or the outcome model is correctly
     specified.
     
-
-
-## Installation with `devtools`:
-
-``` r
-devtools::install_github("shuyang1987/IntegrativeFPM")
-```
 
 ### Main Paper: Yang, Kim, and Song (2019)
 
