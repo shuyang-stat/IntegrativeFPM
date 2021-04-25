@@ -8,7 +8,7 @@ This R package/function is intended to provide a template for implementing the n
 
 To proficient R programmers who are interested in advancing this R package/function, please contact me and I am happy to work together. 
 
-### goal and descripton 
+### Goal and descripton 
 The goal of *IntegrativeFPM* is to implement integrative analyses for
 the finite population mean (FPM) parameters combining a non-probability
 sample with a probability sample which provides high-dimensional
@@ -68,7 +68,8 @@ IntegrativeFPM(y, x, deltaB, sw, family, lambda\_a,  lambda\_b)
 | –         | The sampling score is a logistic regression model for the probability of selection into the nonprobability sample given X 
 |                                                                                              |
 | lambda\_b | is a scalar tuning parameter in the penalized estimation for beta (the outcome model parameter)                                                                  |
-| –         | The outcome model is a linear regression model for continuous outcome or a logistic regression model for binary outcome                               
+| –         | The outcome model is a linear regression model for continuous outcome or a logistic regression model for binary outcome   
+|
 
 
 ### Value
