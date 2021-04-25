@@ -6,7 +6,7 @@
 ### Disclaimer
 This R package/function is intended to provide a template for implementing the new methods. Modification of default options may be needed for a specific application. Please read the associated articles for method details.  
 
-To proficient R programmers are interested in advancing this R package, please contact me and I am happy to work together. 
+To proficient R programmers are interested in advancing this R package/function, please contact me and I am happy to work together. 
 
 ### goal and descripton 
 The goal of *IntegrativeFPM* is to implement integrative analyses for
