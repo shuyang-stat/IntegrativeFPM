@@ -6,7 +6,7 @@
 ### Disclaimer
 This R package/function is intended to provide a template for implementing the new methods. Modification of default options may be needed for a specific application. Please read the associated articles for method details.  
 
-To proficient R programmers are interested in advancing this R package/function, please contact me and I am happy to work together. 
+To proficient R programmers who are interested in advancing this R package/function, please contact me and I am happy to work together. 
 
 ### goal and descripton 
 The goal of *IntegrativeFPM* is to implement integrative analyses for
@@ -51,9 +51,7 @@ IntegrativeFPM(y, x, deltaB, sw, family, lambda\_a,  lambda\_b)
 
 |Note   |   Defaults                                                                                                                                                               |
 | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|1| the default grid for the tuning parameter lambda_a is subject to modification for one specific application
-|2| the default selection for outcome model (SCAD "lambda.min" criteria) is subject to modification for one specific application
-|3| the default probability sampling design is Bernoulli PPS (probability proportional to size) sampling 
+|1| the default probability sampling design is Bernoulli PPS (probability proportional to size) sampling 
 
 ### Arguments
 
@@ -67,7 +65,8 @@ IntegrativeFPM(y, x, deltaB, sw, family, lambda\_a,  lambda\_b)
 | –         | “gaussian”: a linear regression model for the continuous outcome                                                                                                 |
 | –         | “binomial”: a logistic regression model for the binary outcome                                                                                                   |
 | lambda\_a | is a scalar tuning parameter in the penalized estimating equation for alpha (the sampling score parameter)                                                       |
-| –         | The sampling score is a logistic regression model for the probability of selection into the nonprobability sample given X                                        |                                                                                              |
+| –         | The sampling score is a logistic regression model for the probability of selection into the nonprobability sample given X 
+|                                                                                              |
 | lambda\_b | is a scalar tuning parameter in the penalized estimation for beta (the outcome model parameter)                                                                  |
 | –         | The outcome model is a linear regression model for continuous outcome or a logistic regression model for binary outcome                               
 
@@ -153,7 +152,7 @@ lambda2_b <- 0.02
 
 true
 #> [1] 1.000452
-IntegrativeFPM::IntegrativeFPM(y=y.AB, x=x.AB, deltaB, sw, family="gaussian",lambda_a, lambda_b, cv_b=0)
+IntegrativeFPM::IntegrativeFPM(y=y.AB, x=x.AB, deltaB, sw, family="gaussian",lambda_a, lambda_b)
 #> $est
 #> [1] 1.057844
 #> 
@@ -168,7 +167,7 @@ IntegrativeFPM::IntegrativeFPM(y=y.AB, x=x.AB, deltaB, sw, family="gaussian",lam
 
 true2
 #> [1] 0.6551
-IntegrativeFPM::IntegrativeFPM(y=y2.AB, x=x.AB, deltaB, sw, family="binomial",lambda_a, cv_a=0, lambda2_b)
+IntegrativeFPM::IntegrativeFPM(y=y2.AB, x=x.AB, deltaB, sw, family="binomial",lambda_a, lambda2_b)
 #> $est
 #> [1] 0.6618466
 #> 
