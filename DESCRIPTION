@@ -1,0 +1,14 @@
+Package: IntegrativeFPM
+Type: Package
+Title: Integrative Analysis of Finite Population Mean Combining Probability and Nonprobability Samples
+Version: 0.1.0
+Author: Shu Yang
+Maintainer: Shu Yang <syang24@ncsu.edu>
+Description: Implements integrative analyses for the finite population mean parameters combining a non-probability sample with a probability sample which provides high-dimensional representative covariate information of the target population.
+    The non-probability sample contains observations on (X,Y); however, the sampling mechanism is unknown. On the other hand, although the probability sample with sampling weights represents the finite population, it contains observations only on X.
+    The function "IntegrativeFPM" implements a two-step approach for variable selection and doubly robust finite population inference. 
+License: GPL (>=2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1.9000
+Depends: MASS, ncvreg, rootSolve, stats
